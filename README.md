@@ -1,4 +1,5 @@
-jquery-validation
-=================
+WebJar for jQuery validation
 
-WebJar (http://www.webjars.org/) for jQuery validation (http://jqueryvalidation.org/)
+More info: http://webjars.org
+
+Upstream: http://jqueryvalidation.org/
