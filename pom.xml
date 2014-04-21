@@ -9,7 +9,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>jquery-validation</artifactId>
-  <version>1.11.2-SNAPSHOT</version>
+  <version>1.12.0-SNAPSHOT</version>
   <name>jQuery Validation Plugin</name>
   <description>WebJar for jQuery Validation Plugin</description>
   <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <upstream.version>1.11.1</upstream.version>
+    <upstream.version>1.12.0</upstream.version>
     <upstream.url>https://github.com/jzaefferer/jquery-validation/archive/</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
   </properties>
@@ -80,7 +80,7 @@
                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                 <echo message="moving resources" />
                 <move todir="${destDir}">
-                  <fileset dir="${project.build.directory}/jquery-validation-${upstream.version}" includes="jquery.validate.js localization/" />
+                  <fileset dir="${project.build.directory}/jquery-validation-${upstream.version}/dist"/>
                 </move>
               </target>
             </configuration>
@@ -90,7 +90,18 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>2.5</version>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.5.1</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>sonatype-nexus-staging</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
       </plugin>
     </plugins>
     <resources>
