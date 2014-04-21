@@ -9,7 +9,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>jquery-validation</artifactId>
-  <version>1.12.0-SNAPSHOT</version>
+  <version>1.12.0</version>
   <name>jQuery Validation Plugin</name>
   <description>WebJar for jQuery Validation Plugin</description>
   <url>http://webjars.org</url>
@@ -30,7 +30,7 @@
     <url>https://github.com/webjars/jquery-validation</url>
     <connection>scm:git:https://github.com/webjars/jquery-validation</connection>
     <developerConnection>scm:git:https://github.com/webjars/jquery-validation</developerConnection>
-    <tag>HEAD</tag>
+    <tag>jquery-validation-1.12.0</tag>
   </scm>
   <dependencies>
     <dependency>
@@ -80,7 +80,7 @@
                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                 <echo message="moving resources" />
                 <move todir="${destDir}">
-                  <fileset dir="${project.build.directory}/jquery-validation-${upstream.version}/dist"/>
+                  <fileset dir="${project.build.directory}/jquery-validation-${upstream.version}/dist" />
                 </move>
               </target>
             </configuration>
