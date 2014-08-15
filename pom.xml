@@ -44,6 +44,13 @@
     <upstream.version>1.13.0</upstream.version>
     <upstream.url>https://github.com/jzaefferer/jquery-validation/archive/</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+  
+    <requirejs>
+    {
+    "paths": { "jquery-validation": "jquery.validate", "jquery-validation-min": "jquery.validate.min" },
+    "shim": { "jquery-validation": [ "jquery" ], "jquery-validation-min": [ "jquery" ] }
+    }
+    </requirejs>
   </properties>
   <build>
     <plugins>
