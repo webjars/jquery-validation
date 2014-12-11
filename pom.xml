@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-validation</artifactId>
-    <version>1.13.0-2-SNAPSHOT</version>
+    <version>1.13.1-SNAPSHOT</version>
     <name>jQuery Validation Plugin</name>
     <description>WebJar for jQuery Validation Plugin</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>1.13.0</upstream.version>
+        <upstream.version>1.13.1</upstream.version>
         <upstream.url>https://github.com/jzaefferer/jquery-validation/archive/</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     
