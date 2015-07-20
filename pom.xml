@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-validation</artifactId>
-    <version>1.14.0</version>
+    <version>1.14.1-SNAPSHOT</version>
     <name>jQuery Validation Plugin</name>
     <description>WebJar for jQuery Validation Plugin</description>
     <url>http://webjars.org</url>
@@ -30,7 +30,7 @@
         <url>https://github.com/webjars/jquery-validation</url>
         <connection>scm:git:https://github.com/webjars/jquery-validation</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-validation</developerConnection>
-        <tag>jquery-validation-1.14.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <dependencies>
         <dependency>
